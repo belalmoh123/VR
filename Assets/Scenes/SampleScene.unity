@@ -1245,10 +1245,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 469020320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1be08297253c6d543b32daf24eb92126, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ac7e0231cdfad4394e555f4627d894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongBuzzClip: {fileID: 8300000, guid: ccd70fa3c5b74064cabc4b68cebe4158, type: 3}
+  colorID: green
+  isPlaced: 0
 --- !u!1 &486873006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,9 +1616,9 @@ MonoBehaviour:
   - {fileID: 1513389086}
   - {fileID: 469020320}
   - {fileID: 1780586404}
-  successText: {fileID: 1621796179}
+  successUI: {fileID: 0}
   restartButton: {fileID: 2071504469}
-  successClip: {fileID: 8300000, guid: 5aecc3453f2d7e24e9ace23982e9ce95, type: 3}
+  successSound: {fileID: 0}
 --- !u!4 &871319205
 Transform:
   m_ObjectHideFlags: 0
@@ -2873,6 +2874,7 @@ GameObject:
   - component: {fileID: 1266765843}
   - component: {fileID: 1266765842}
   - component: {fileID: 1266765841}
+  - component: {fileID: 1266765845}
   m_Layer: 0
   m_Name: greenplaceholder
   m_TagString: greenplceholder
@@ -2921,7 +2923,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cede0a4bff774fc4d8e6621e79cf0427, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2966,6 +2968,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1266765845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266765840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110d28fee1ff9434eb8961a2bb2f8787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceptedColor: 
+  snapPoint: {fileID: 0}
 --- !u!1 &1400520453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,10 +3324,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1513389086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1be08297253c6d543b32daf24eb92126, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ac7e0231cdfad4394e555f4627d894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongBuzzClip: {fileID: 8300000, guid: ccd70fa3c5b74064cabc4b68cebe4158, type: 3}
+  colorID: red
+  isPlaced: 0
 --- !u!1 &1551014055
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,13 +3459,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621796179}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.006906327, y: 0.99988145, z: -0.00009505337, w: 0.013761591}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 925646599}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.022, y: 178.423, z: 0.791}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -3563,6 +3580,7 @@ GameObject:
   - component: {fileID: 1629622483}
   - component: {fileID: 1629622482}
   - component: {fileID: 1629622481}
+  - component: {fileID: 1629622485}
   m_Layer: 0
   m_Name: blueplaceholder
   m_TagString: blueplaceholder
@@ -3611,7 +3629,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 727cec0fd1b86ad4ca9e2fd8f0c41c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3656,6 +3674,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1629622485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629622480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110d28fee1ff9434eb8961a2bb2f8787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceptedColor: 
+  snapPoint: {fileID: 0}
 --- !u!1 &1649257511
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,6 +3837,7 @@ GameObject:
   - component: {fileID: 1755385765}
   - component: {fileID: 1755385764}
   - component: {fileID: 1755385763}
+  - component: {fileID: 1755385767}
   m_Layer: 0
   m_Name: redplaceholder
   m_TagString: redplaceholder
@@ -3853,7 +3886,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 33361b4855ee2ac43b5a7edda658d060, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3898,6 +3931,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1755385767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755385762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110d28fee1ff9434eb8961a2bb2f8787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceptedColor: 
+  snapPoint: {fileID: 0}
 --- !u!1 &1780586404
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,10 +4241,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1780586404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1be08297253c6d543b32daf24eb92126, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ac7e0231cdfad4394e555f4627d894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongBuzzClip: {fileID: 8300000, guid: ccd70fa3c5b74064cabc4b68cebe4158, type: 3}
+  colorID: blue
+  isPlaced: 0
 --- !u!1 &2071504467
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,14 +4273,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071504467}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.99954116, z: -0, w: -0.030291684}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 486873007}
   m_Father: {fileID: 925646599}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -183.472, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -50}
