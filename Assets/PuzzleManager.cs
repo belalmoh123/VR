@@ -46,8 +46,7 @@ public class PuzzleManager : MonoBehaviour
             CubeBehavior cubeBehavior = cube.GetComponent<CubeBehavior>();
             cubeBehavior.GetComponent<XRGrabInteractable>().enabled = true;
             cubeBehavior.GetComponent<Rigidbody>().isKinematic = false;
-            cube.transform.position = cube.GetComponent<CubeBehavior>().originalPosition;
-            cube.transform.rotation = cube.GetComponent<CubeBehavior>().originalRotation;
+            
         }
         successText.GetComponent<TextMeshProUGUI>().enabled = false;
         restartButton.gameObject.SetActive(false);
